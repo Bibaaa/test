@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .el{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 650px;
+                top: 100px;
+                
+                animation: glow 1s; 
+                animation-iteration-count: infinite; 
+            }
+
+
+            @keyframes glow{
+                0% {opacity: 1;}
+                50%{opacity: 0.5; } 
+                50%{background: #eed65d;} 
+                100%{opacity:1;}
+            }
+            
+
+    .el1{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 250px;
+                top: 100px;
+                animation: glow1 1s; 
+                animation-iteration-count: infinite; 
+            
+    }
+            @keyframes glow1{
+                0% {opacity: 1;}
+                50%{opacity: 0.5; } 
+                50%{background: #a3a3f5;} 
+                100%{opacity:1;}
+            }
+
+    .el2{
+                
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 450px;
+                top: 100px;
+                
+                animation: glow2 1s; 
+                animation-iteration-count: infinite; 
+            }
+    
+    
+            @keyframes glow2{
+                0% {opacity: 1;}
+                0%,100%{background: green;}
+                50%{opacity: 0.5; } 
+                50%{background: #a6a6a6;} 
+                100%{opacity:1;}
+            }
+
+
+    .el3{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 50px;
+                top: 100px;
+                
+                animation: glow3 1s; 
+                animation-iteration-count: infinite; 
+            }
+    
+    
+            @keyframes glow3{
+                0% {opacity: 1;}
+                50%{opacity: 0.5; } 
+                50%{background: #80d4ff;} 
+                100%{opacity:1;}
+            }
+
+
+    .alert {
+        opacity: 0.85;
+        word-break: break-word;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        margin-top: 20px;/* my edit*/
+        font-size: 12px;
+    }
+    .alert h4 {
+        margin-top: 0;
+        color: inherit;
+    }
+    .alert .alert-link {
+        font-weight: bold;
+    }
+    .alert > p,
+    .alert > ul {
+        margin-bottom: 0;
+    }
+    .alert > p + p {
+         margin-top: 5px;
+    }
+
+    .alert-success {
+        color: #3c763d;
+        background-color: #a28911;
+        border-color: #d6e9c6;
+    }
+    .alert-success hr {
+        border-top-color: #c9e2b3;
+    }
+    .alert-success .alert-link {
+        color: #2b542c;
+    }
+    .alert-info {
+        color: #31708f;
+        background-color: #0099e6;
+        border-color: #bce8f1;
+    }
+    .alert-info hr {
+        border-top-color: #a6e1ec;
+    }
+    .alert-info .alert-link {
+        color: #245269;
+    }
+    .alert-warning {
+        color: #8a6d3b;
+        background-color: #8c8cf3;
+        border-color: #faebcc;
+    }
+
+
+    .alert-warning hr {
+        border-top-color: #f7e1b5;
+    }
+    .alert-warning .alert-link {
+        color: #66512c;
+    }
+    .alert-danger {
+        color: #a94442;
+        background-color: #737373;
+        border-color: #ebccd1;
+    }
+    .alert-danger hr {
+        border-top-color: #e4b9c0;
+    }
+    .alert-danger .alert-link {
+        color: #843534;
+    }
+    </style>
+</head>
+<body>
+    
+        <div id="el" class="alert alert-success el">
+                <p>Success!</p>
+            </div>
+            
+        
+            <div id="el1" class="alert alert-warning el1">
+                <p>Warning!</p>
+            </div>
+        
+            <div id="el2" class="alert alert-danger el2">
+                <p>Error!</p>
+            </div>
+        
+          <div id="el3" class="alert alert-info el3">
+                <p>Information!</p>
+            </div>
+</body>
+</html>
